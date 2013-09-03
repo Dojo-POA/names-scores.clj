@@ -10,4 +10,9 @@
     (is (= 2 (calcula-peso-palavra "B"))))
   
   (testing "Se palavra AB entao valor eh 3"
-    (is (= 3 (calcula-peso-palavra "AB")))))
+    (is (= 3 (calcula-peso-palavra "AB"))))
+    
+  
+  (testing "Se palavra vazia entao valor eh 0"
+      (is (= 0 (calcula-peso-palavra "")))))
+    
