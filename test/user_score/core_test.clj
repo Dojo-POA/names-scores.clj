@@ -4,5 +4,9 @@
 
 (deftest calcula-peso-palavra-test
   (testing "Se palavra A entao valor eh um"
-  (is (= 1 (calcula-peso-palavra "A")))
+  (is (= 1 (calcula-peso-palavra "A"))))
+  
+  
+  (testing "Se palavra B entao valor eh dois"
+  (is (= 2 (calcula-peso-palavra "B")))
   ))

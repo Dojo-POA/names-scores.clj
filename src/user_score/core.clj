@@ -2,7 +2,7 @@
 
 (defn calcula-peso-palavra
   [palavra]
-  1)
+  (- (int (first palavra)) 64))
   
   
   
