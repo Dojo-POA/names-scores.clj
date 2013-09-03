@@ -16,3 +16,6 @@
   (testing "Se palavra vazia entao valor eh 0"
       (is (= 0 (calcula-peso-palavra "")))))
     
+(deftest ordena-lista-de-palavras-test
+  (testing "Se lista ['FOO' 'BAR'] entao ['BAR' 'FOO']"
+     (is (= ["BAR" "FOO"] (ordena-lista-de-palavras ["FOO" "BAR"]) ))))

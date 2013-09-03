@@ -8,3 +8,7 @@
 (defn calcula-peso-palavra
   [palavra]
   (reduce + (map letra->peso palavra)))
+  
+  
+(defn ordena-lista-de-palavras [lista]
+  (sort lista))
