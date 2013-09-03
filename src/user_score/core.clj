@@ -15,3 +15,6 @@
   
 (defn lista-duplas [lista]
   (map-indexed vector lista))
+  
+(defn lista-valor-palavras [lista] 
+   [(calcula-peso-palavra (first lista))])

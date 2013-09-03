@@ -23,4 +23,10 @@
 
 (deftest lista-duplas-test
   (testing "Se lista ['BAR' 'FOO'] entao [(0 'BAR') (1 'FOO')]"
-    (is (= [[0 'BAR'] [1 'FOO']] (lista-duplas ['BAR' 'FOO'])))))
+    (is (= [[0 "BAR"] [1 "FOO"]] (lista-duplas ["BAR" "FOO"])))))
+    
+(deftest lista-valor-palavra-test
+  (testing "Se lista ['AA'] entao 2")
+    (is (= [2] (lista-valor-palavras ["AA"]))))
+    
+    
