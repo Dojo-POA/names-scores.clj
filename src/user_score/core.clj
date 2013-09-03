@@ -12,3 +12,6 @@
   
 (defn ordena-lista-de-palavras [lista]
   (sort lista))
+  
+(defn lista-duplas [lista]
+  (map-indexed vector lista))

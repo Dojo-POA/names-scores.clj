@@ -19,3 +19,8 @@
 (deftest ordena-lista-de-palavras-test
   (testing "Se lista ['FOO' 'BAR'] entao ['BAR' 'FOO']"
      (is (= ["BAR" "FOO"] (ordena-lista-de-palavras ["FOO" "BAR"]) ))))
+     
+
+(deftest lista-duplas-test
+  (testing "Se lista ['BAR' 'FOO'] entao [(0 'BAR') (1 'FOO')]"
+    (is (= [[0 'BAR'] [1 'FOO']] (lista-duplas ['BAR' 'FOO'])))))
