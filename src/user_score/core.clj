@@ -12,9 +12,9 @@
   
 (defn ordena-lista-de-palavras [lista]
   (sort lista))
-  
-(defn lista-duplas [lista]
-  (map-indexed vector lista))
-  
-(defn lista-valor-palavras [lista] 
-   [(calcula-peso-palavra (first lista))])
+
+(defn lista-valor-palavras [lista]
+   (map-indexed 
+     (fn [posicao palavra] (* (calcula-peso-palavra palavra) (inc posicao)))
+     lista))
+
