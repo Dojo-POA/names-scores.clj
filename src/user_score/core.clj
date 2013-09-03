@@ -1,6 +1,10 @@
 (ns user-score.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn calcula-peso-palavra
+  [palavra]
+  1)
+  
+  
+  
+
+

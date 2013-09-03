@@ -2,6 +2,7 @@
   (:require [clojure.test :refer :all]
             [user-score.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest calcula-peso-palavra-test
+  (testing "Se palavra A entao valor eh um"
+  (is (= 1 (calcula-peso-palavra "A")))
+  ))
