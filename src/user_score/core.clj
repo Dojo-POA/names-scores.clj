@@ -2,7 +2,17 @@
 
 (defn calcula-peso-palavra
   [palavra]
-  (- (int (first palavra)) 64))
+  (reduce
+    (fn [soma letra] 
+      (+
+        soma
+        (- (int letra) 64)
+      )
+    )
+    0
+    palavra
+  )
+)
   
   
   

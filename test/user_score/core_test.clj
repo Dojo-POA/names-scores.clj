@@ -3,10 +3,13 @@
             [user-score.core :refer :all]))
 
 (deftest calcula-peso-palavra-test
-  (testing "Se palavra A entao valor eh um"
+  (testing "Se palavra A entao valor eh 1"
   (is (= 1 (calcula-peso-palavra "A"))))
   
   
-  (testing "Se palavra B entao valor eh dois"
-  (is (= 2 (calcula-peso-palavra "B")))
-  ))
+  (testing "Se palavra B entao valor eh 2"
+  (is (= 2 (calcula-peso-palavra "B"))))
+  
+  (testing "Se palavra AB entao valor eh 3"
+  (is (= 3 (calcula-peso-palavra "AB"))))
+  )
