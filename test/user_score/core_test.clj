@@ -21,8 +21,11 @@
      (is (= ["BAR" "FOO"] (ordena-lista-de-palavras ["FOO" "BAR"]) ))))
      
 (deftest lista-valor-palavra-test
-  (testing "Se lista ['AA'] entao 2")
-    (is (= [2] (lista-valor-palavras ["AA"])))
-  (testing "Se lista ['AA' 'AA'] entao [2 4]")
-    (is (= [2, 4] (lista-valor-palavras ["AA" "AA"]))))
+  (testing "Se lista ['AA'] entao 2"
+    (is (= [2] (lista-valor-palavras ["AA"]))))
+  (testing "Se lista ['AA' 'AA'] entao [2 4]"
+    (is (= [2, 4] (lista-valor-palavras ["AA" "AA"])))))
       
+(deftest soma-tudo-test
+  (testing "Soma de ['AA' 'AA'] eh 2+4==6"
+    (is (= 6 (soma-tudo ["AA" "AA"])))))

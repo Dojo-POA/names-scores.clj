@@ -16,5 +16,7 @@
   (* (calcula-peso-palavra palavra) (inc posicao)))
 
 (defn lista-valor-palavras [lista]
-   (map-indexed peso-ponderado lista))
+  (map-indexed peso-ponderado lista))
 
+(defn soma-tudo [palavras]
+  (reduce + (lista-valor-palavras palavras)))
