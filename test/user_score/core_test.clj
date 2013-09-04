@@ -14,12 +14,6 @@
     
   (testing "Se palavra vazia entao valor eh 0"
       (is (= 0 (calcula-peso-palavra "")))))
-    
-(deftest lista-valor-palavra-test
-  (testing "Se lista ['AA'] entao 2"
-    (is (= [2] (lista-valor-palavras ["AA"]))))
-  (testing "Se lista ['AA' 'AA'] entao [2 4]"
-    (is (= [2, 4] (lista-valor-palavras ["AA" "AA"])))))
       
 (deftest soma-tudo-test
   (testing "Soma de ['AA' 'AA'] eh 2+4==6"
