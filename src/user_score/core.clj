@@ -7,10 +7,6 @@
 
 (defn calcula-peso-palavra [palavra]
   (reduce + (map letra->peso palavra)))
-  
-  
-(defn ordena-lista-de-palavras [lista]
-  (sort lista))
 
 (defn peso-ponderado [posicao palavra]
   (* (calcula-peso-palavra palavra) (inc posicao)))
@@ -20,3 +16,6 @@
 
 (defn soma-tudo [palavras]
   (reduce + (lista-valor-palavras palavras)))
+
+(defn resolve-problema [palavras]
+  (soma-tudo (sort palavras)))

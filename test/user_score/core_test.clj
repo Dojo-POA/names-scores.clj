@@ -12,14 +12,9 @@
   (testing "Se palavra AB entao valor eh 3"
     (is (= 3 (calcula-peso-palavra "AB"))))
     
-  
   (testing "Se palavra vazia entao valor eh 0"
       (is (= 0 (calcula-peso-palavra "")))))
     
-(deftest ordena-lista-de-palavras-test
-  (testing "Se lista ['FOO' 'BAR'] entao ['BAR' 'FOO']"
-     (is (= ["BAR" "FOO"] (ordena-lista-de-palavras ["FOO" "BAR"]) ))))
-     
 (deftest lista-valor-palavra-test
   (testing "Se lista ['AA'] entao 2"
     (is (= [2] (lista-valor-palavras ["AA"]))))
@@ -29,3 +24,7 @@
 (deftest soma-tudo-test
   (testing "Soma de ['AA' 'AA'] eh 2+4==6"
     (is (= 6 (soma-tudo ["AA" "AA"])))))
+
+(deftest resolve-problema-test
+  (testing "['B' 'A'] eh 1+4==5"
+    (is (= 5 (resolve-problema ["B" "A"])))))
